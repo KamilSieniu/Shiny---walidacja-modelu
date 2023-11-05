@@ -6,7 +6,8 @@ Shiny to pakiet, który umożliwia tworzenie interaktywnych stron internetowych 
 
 Zespół, który zajmował się tworzeniem pakietu Shiny od podstaw, składał się z około 40 osób i firm, a osobą odpowiedzialną za prowadzenie i zarządzanie tym projektem jest Winston Chang. 
 
-## Jak działa Shiny - budowa
+## Jak działa Shiny
+### Budowa
 
 Aplikacja w Shiny zakłada się z trzech podstawowych elementów po zainstalowaniu pakietu ``` shiny ```.
 
@@ -45,7 +46,7 @@ ui <- fluidPage(
 )
 ```
 
-2\) Funkcja ```server``` zawiera instrukcje potrzebne komputerowi do zbudowania aplikacji.
+2\) Funkcja ```server``` natomiast jest sercem aplikacji, gdzie przetwarzane są dane i reaguje się na działania użytkownika, wykonując kod R, więc zawiera instrukcje potrzebne komputerowi do zbudowania aplikacji.
 ```
 shinyServer(
   function(input, output) {
@@ -63,15 +64,21 @@ server <- ...
 shinyApp(ui = ui, server = server)
 ```
 
-## Jak działa Shiny?
 
-Shiny opiera się na dwóch głównych komponentach: interfejsie użytkownika (UI) i serwerze. UI określa wygląd aplikacji i dostępne elementy, takie jak wykresy czy suwaki. Serwer to "serce" aplikacji, gdzie dane są przetwarzane i gdzie reaguje się na działania użytkownika.
+### Programowanie reaktywne 
 
-### Programowanie reaktywne w Shiny
+Jak widać Shiny jest wyposażony w bibliotekę programowania reaktywnego, którą używa się do strukturyzowania logiki aplikacji. Korzystając z tej biblioteki, zmiana wartości wejściowych naturalnie powoduje ponowne wykonanie odpowiednich części kodu R, co z kolei powoduje aktualizację zmienionych wyników. Model programowania reaktywnego eliminuje potrzebę dodatkowego kodu obsługi zdarzeń. 
 
-Shiny wykorzystuje programowanie reaktywne, które pozwala aplikacjom automatycznie aktualizować wyniki w odpowiedzi na zmiany parametrów wejściowych użytkownika. To podejście umożliwia prowadzenie interaktywnych analiz.
+W Shiny istnieją trzy rodzaje obiektów w programowaniu reaktywnym: źródła reaktywne, punkty końcowe reaktywne i przewodniki reaktywne. 
 
-Shiny jest elastyczny i może być używany do tworzenia zarówno prostych aplikacji wizualizacyjnych, jak i zaawansowanych narzędzi analitycznych. Pakiet integruje się z innymi pakietami w R, rozszerzając możliwości statystyczne i graficzne.
+Źródła i punkty końcowe reaktywne: Najprostsza struktura programu reaktywnego obejmuje tylko źródło i punkt końcowy. W aplikacji Shiny źródłem zwykle są dane wejściowe użytkownika przez interfejs przeglądarki. Na przykład, gdy użytkownik wybiera element, wpisuje dane lub klika przycisk, te działania ustawiają wartości, które są źródłami reaktywnymi. Reaktywny punkt końcowy to zazwyczaj coś, co pojawia się w oknie przeglądarki użytkownika, takie jak wykres lub tabela wartości. 
+
+```ui``` jest proste, ponieważ każdy użytkownik otrzymuje ten sam HTML. ```serwer``` jest bardziej skomplikowany, ponieważ każdy użytkownik musi otrzymać niezależną wersję aplikacji; gdy użytkownik A przesuwa suwak, użytkownik B nie powinien zobaczyć zmiany swoich wyników. 
+Aby osiągnąć tę niezależność, Shiny wywołuje funkcję server() za każdym razem, gdy zaczyna się nowa sesja. Podobnie jak w przypadku każdej innej funkcji R, gdy funkcja serwera jest wywoływana, tworzy nowe lokalne środowisko niezależne od każdego innego wywołania funkcji. Pozwala to każdej sesji mieć unikalny stan, a także izoluje zmienne utworzone wewnątrz funkcji. Dlatego prawie całe programowanie reaktywne, które wykonasz w Shiny, będzie wewnątrz funkcji serwera. 
+
+### Przegląd kontrolek
+
+
 
 ## Zastosowania Shiny
 
