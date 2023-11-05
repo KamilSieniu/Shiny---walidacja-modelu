@@ -2,33 +2,65 @@
 
 ## Czym jest Shiny?
 
-Shiny to pakiet, który umożliwia tworzenie interaktywnych stron internetowych 
-w formie aplikacji, które zasilane są przez działający na serwerze kod R (w tle). 
-Dzięki temu możliwe jest wykorzystanie statystycznych i graficznych możliwości tego języka. 
-Używając kodu w R, tworzy się interfejs użytkownika i serwer, a Shiny kompiluje go do HTML, 
-CSS i JavaScriptu potrzebnych do wyświetlenia aplikacji w sieci. Użytkownicy mogą poprzez 
-stronę wybierać parametry przetwarzania według swoich potrzeb. Dane i parametry są przetwarzane 
-na serwerze a wynik jest przedstawiany ponownie na stronie internetowej. Głównym zadaniem jest 
-umożliwienie analitykom danych prezentowania wyników analiz w przystępny, dynamiczny sposób, 
-bez konieczności zagłębiania się w złożoności programowania webowego.
+Shiny to pakiet, który umożliwia tworzenie interaktywnych stron internetowych w formie aplikacji, które zasilane są przez działający na serwerze kod R (w tle). Dzięki temu możliwe jest wykorzystanie statystycznych i graficznych możliwości tego języka. Używając kodu w R, tworzy się interfejs użytkownika i serwer, a Shiny kompiluje go do HTML, CSS i JavaScriptu potrzebnych do wyświetlenia aplikacji w sieci. Użytkownicy mogą poprzez stronę wybierać parametry przetwarzania według swoich potrzeb. Dane i parametry są przetwarzane na serwerze a wynik jest przedstawiany ponownie na stronie internetowej. Głównym zadaniem jest umożliwienie analitykom danych prezentowania wyników analiz w przystępny, dynamiczny sposób, bez konieczności zagłębiania się w złożoności programowania webowego.
 
-Zespół, który zajmował się tworzeniem pakietu Shiny od podstaw, składał się z około 40 osób 
-i firm, a osobą odpowiedzialną za prowadzenie i zarządzanie tym projektem jest Winston Chang. 
+Zespół, który zajmował się tworzeniem pakietu Shiny od podstaw, składał się z około 40 osób i firm, a osobą odpowiedzialną za prowadzenie i zarządzanie tym projektem jest Winston Chang. 
 
-## Budowa
+## Jak działa Shiny - budowa
 
 Aplikacja w Shiny zakłada się z trzech podstawowych elementów po zainstalowaniu pakietu ``` shiny ```.
 
-1\) Element pierwszy
-2\) Element drugi
-3\) Element trzeci
+1\) Obiekt interfejsu użytkownika ```ui``` definiuje, jak aplikacja będzie wyglądać i jakie elementy będą dostępne dla użytkownika, takie jak wykresy, tabelki czy suwaki do wyboru parametrów. 
 
+``` 
+# Define UI for app that draws a histogram ----
+ui <- fluidPage(
 
+  # App title ----
+  titlePanel("Hello Shiny!"),
 
+  # Sidebar layout with input and output definitions ----
+  sidebarLayout(
 
+    # Sidebar panel for inputs ----
+    sidebarPanel(
+
+      # Input: Slider for the number of bins ----
+      sliderInput(inputId = "bins",
+                  label = "Number of bins:",
+                  min = 1,
+                  max = 50,
+                  value = 30)
+
+    ),
+
+    # Main panel for displaying outputs ----
+    mainPanel(
+
+      # Output: Histogram ----
+      plotOutput(outputId = "distPlot")
+
+    )
+  )
+)
+```
+
+2\) Funkcja ```server``` zawiera instrukcje potrzebne komputerowi do zbudowania aplikacji.
+```
+shinyServer(
+  function(input, output) {
+  }
+)
+```
+
+3\) Na koniec funkcja ```shinyApp``` tworzy obiekty aplikacji Shiny z jawnej pary interfejs użytkownika/serwer.
 ```r
-# To jest przykładowy kod R
-summary(lm(data = mtcars, mpg ~ cyl + hp))
+# See above for the definitions of ui and server
+ui <- ...
+
+server <- ...
+
+shinyApp(ui = ui, server = server)
 ```
 
 ## Jak działa Shiny?
