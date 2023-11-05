@@ -6,7 +6,7 @@ Shiny to pakiet, który umożliwia tworzenie interaktywnych stron internetowych 
 
 Swój udział w budowaniu pakietu na przestrzeni lat miało około 40 osób i firm, a osobą odpowiedzialną za prowadzenie i zarządzanie tym projektem jest Winston Chang. 
 
-## Jak działa Shiny
+## Jak działa Shiny?
 ### Budowa
 
 Aplikacja w Shiny zakłada się z trzech podstawowych elementów po zainstalowaniu pakietu ``` shiny ```.
