@@ -9,7 +9,7 @@ Swój udział w budowaniu pakietu na przestrzeni lat miało około 40 osób i fi
 ## Jak działa Shiny?
 ### Budowa
 
-Aplikacja w Shiny zakłada się z trzech podstawowych elementów po zainstalowaniu pakietu ``` shiny ```.
+Aplikacja w Shiny składa się z trzech podstawowych elementów.
 
 1\) Obiekt interfejsu użytkownika ```ui``` definiuje, jak aplikacja będzie wyglądać i jakie elementy będą dostępne dla użytkownika, takie jak wykresy, tabelki czy suwaki do wyboru parametrów. 
 
