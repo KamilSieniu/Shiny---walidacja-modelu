@@ -78,7 +78,7 @@ Aby osiągnąć tę niezależność, Shiny wywołuje funkcję server() za każdy
 
 ### Przegląd kontrolek
 
-
+![Obraz1](https://github.com/KamilSieniu/Shiny---walidacja-modelu/blob/f42e7d1196f863006e90e02145a057e25066b787/MicrosoftTeams-image.png)
 
 ## Zastosowania Shiny
 
