@@ -96,6 +96,11 @@ Jak widać Shiny jest niezwykle elastyczny – można go używać do tworzenia p
 ## Przykłady
 * [Czas trwania erupcji gejzera](https://gallery.shinyapps.io/083-front-page/)
 * [Oceny seriali](http://mi2.mini.pw.edu.pl:8080/Przewodnik/seriale/)
-* [Link3](https://gallery.shinyapps.io/182-google-charts/)
-* [Link4](https://gallery.shinyapps.io/genome_browser/)
+* [Wydatki na zdrowie a oczekiwana długość życia w 1995](https://gallery.shinyapps.io/182-google-charts/)
+* [Rak trzustki - przeglądarka genomu](https://gallery.shinyapps.io/genome_browser/)
 
+## Bibliografia
+* https://shiny.posit.co/r/gallery/ [wybrane przykłady]
+* https://www.cs.put.poznan.pl/alabijak/emd/08_Aplikacje_dla_uzytkownikow.html#/26
+* https://shiny.posit.co/r/getstarted/build-an-app/customizing-ui/interface.html
+* https://mastering-shiny.org/
