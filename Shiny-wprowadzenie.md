@@ -84,11 +84,12 @@ Aby osiągnąć tę niezależność, Shiny wywołuje funkcję server() za każdy
 
 Shiny jest używany do:
 
-•	Tworzenia pulpitów nawigacyjnych, które śledzą ważne wskaźniki wydajności na wysokim poziomie, jednocześnie ułatwiając dokładne zbadanie metryk, które wymagają dalszego dochodzenia. 
-•	Zastępowania setek stron PDF interaktywnymi aplikacjami, które pozwalają użytkownikowi przejść do dokładnie tego fragmentu wyników, który go interesuje. 
-•	Przedstawiania skomplikowanych modeli niefachowym odbiorcom za pomocą informacyjnych wizualizacji i interaktywnej analizy. 
-•	Możesz udostępnić zaawansowane analizy R użytkownikom nieposiadającym umiejętności programowania. 
-•	Tworzenia interaktywnych aplikacji do nauczania statystyki i pojęć związanych z nauką o danych, które pozwalają uczącym się modyfikować dane wejściowe i obserwować efekty tych zmian w analizie. 
+
+* Tworzenia pulpitów nawigacyjnych, które śledzą ważne wskaźniki wydajności na wysokim poziomie, jednocześnie ułatwiając dokładne zbadanie metryk, które wymagają dalszego dochodzenia.
+* Zastępowania setek stron PDF interaktywnymi aplikacjami, które pozwalają użytkownikowi przejść do dokładnie tego fragmentu wyników, który go interesuje. 
+* Przedstawiania skomplikowanych modeli niefachowym odbiorcom za pomocą informacyjnych wizualizacji i interaktywnej analizy. 
+* Możesz udostępnić zaawansowane analizy R użytkownikom nieposiadającym umiejętności programowania. 
+* Tworzenia interaktywnych aplikacji do nauczania statystyki i pojęć związanych z nauką o danych, które pozwalają uczącym się modyfikować dane wejściowe i obserwować efekty tych zmian w analizie. 
 
 Jak widać Shiny jest niezwykle elastyczny – można go używać do tworzenia prostych aplikacji służących do wizualizacji danych, jak również skomplikowanych narzędzi analitycznych wykorzystywanych w przedsiębiorstwach do podejmowania decyzji biznesowych. Pakiet ten doskonale integruje się z innymi pakietami w R, co pozwala na wykorzystanie szerokiej gamy metod statystycznych i graficznych dostępnych w tym języku. Warto również wspomnieć, że Shiny wspiera prace grupowe i jest przystosowany do pracy w środowisku sieciowym. Aplikacje Shiny mogą być hostowane na lokalnych serwerach, w chmurze (na przykład na platformie ShinyApps.io) lub bezpośrednio z RStudio Server, co ułatwia współdzielenie aplikacji z innymi użytkownikami. 
 
