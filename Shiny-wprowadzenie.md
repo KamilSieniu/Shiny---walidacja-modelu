@@ -13,7 +13,7 @@ Aplikacja w Shiny zakłada się z trzech podstawowych elementów po zainstalowan
 1\) Obiekt interfejsu użytkownika ```ui``` definiuje, jak aplikacja będzie wyglądać i jakie elementy będą dostępne dla użytkownika, takie jak wykresy, tabelki czy suwaki do wyboru parametrów. 
 
 ``` 
-# Define UI for app that draws a histogram ----
+# Zdefiniuj ----
 ui <- fluidPage(
 
   # App title ----
