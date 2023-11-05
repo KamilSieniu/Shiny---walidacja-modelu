@@ -14,19 +14,19 @@ Aplikacja w Shiny zakłada się z trzech podstawowych elementów po zainstalowan
 1\) Obiekt interfejsu użytkownika ```ui``` definiuje, jak aplikacja będzie wyglądać i jakie elementy będą dostępne dla użytkownika, takie jak wykresy, tabelki czy suwaki do wyboru parametrów. 
 
 ``` 
-# Zdefiniuj ----
+# Zdefiniowanie interfejsu użytkownika dla aplikacji rysującej histogram ----
 ui <- fluidPage(
 
-  # App title ----
+  # Tytuł aplikacji ----
   titlePanel("Hello Shiny!"),
 
-  # Sidebar layout with input and output definitions ----
+  # Układ boczny z definicjami wejść i wyjść ----
   sidebarLayout(
 
-    # Sidebar panel for inputs ----
+    # Panel boczny dla wejść ----
     sidebarPanel(
 
-      # Input: Slider for the number of bins ----
+      # Wejście: Suwak dla liczby przedziałów ----
       sliderInput(inputId = "bins",
                   label = "Number of bins:",
                   min = 1,
@@ -35,10 +35,10 @@ ui <- fluidPage(
 
     ),
 
-    # Main panel for displaying outputs ----
+    # Główny panel do wyświetlania wyników ----
     mainPanel(
 
-      # Output: Histogram ----
+      # Wyjście: Histogram ----
       plotOutput(outputId = "distPlot")
 
     )
