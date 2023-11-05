@@ -11,7 +11,7 @@ Swój udział w budowaniu pakietu na przestrzeni lat miało około 40 osób i fi
 
 Aplikacja w Shiny składa się z trzech podstawowych elementów.
 
-1\) Obiekt interfejsu użytkownika ```ui``` definiuje, jak aplikacja będzie wyglądać i jakie elementy będą dostępne dla użytkownika, takie jak wykresy, tabelki czy suwaki do wyboru parametrów. 
+1\) Obiekt interfejsu użytkownika ```UI``` definiuje, jak aplikacja będzie wyglądać i jakie elementy będą dostępne dla użytkownika, takie jak wykresy, tabelki czy suwaki do wyboru parametrów. 
 
 ``` 
 # Zdefiniowanie interfejsu użytkownika dla aplikacji rysującej histogram ----
@@ -73,7 +73,7 @@ W Shiny istnieją trzy rodzaje obiektów w programowaniu reaktywnym: źródła r
 
 Źródła i punkty końcowe reaktywne: Najprostsza struktura programu reaktywnego obejmuje tylko źródło i punkt końcowy. W aplikacji Shiny źródłem zwykle są dane wejściowe użytkownika przez interfejs przeglądarki. Na przykład, gdy użytkownik wybiera element, wpisuje dane lub klika przycisk, te działania ustawiają wartości, które są źródłami reaktywnymi. Reaktywny punkt końcowy to zazwyczaj coś, co pojawia się w oknie przeglądarki użytkownika, takie jak wykres lub tabela wartości. 
 
-```ui``` jest proste, ponieważ każdy użytkownik otrzymuje ten sam HTML. ```serwer``` jest bardziej skomplikowany, ponieważ każdy użytkownik musi otrzymać niezależną wersję aplikacji; gdy użytkownik A przesuwa suwak, użytkownik B nie powinien zobaczyć zmiany swoich wyników. 
+```UI``` jest proste, ponieważ każdy użytkownik otrzymuje ten sam HTML. ```serwer``` jest bardziej skomplikowany, ponieważ każdy użytkownik musi otrzymać niezależną wersję aplikacji; gdy użytkownik A przesuwa suwak, użytkownik B nie powinien zobaczyć zmiany swoich wyników. 
 Aby osiągnąć tę niezależność, Shiny wywołuje funkcję server() za każdym razem, gdy zaczyna się nowa sesja. Podobnie jak w przypadku każdej innej funkcji R, gdy funkcja serwera jest wywoływana, tworzy nowe lokalne środowisko niezależne od każdego innego wywołania funkcji. Pozwala to każdej sesji mieć unikalny stan, a także izoluje zmienne utworzone wewnątrz funkcji. Dlatego prawie całe programowanie reaktywne, które wykonasz w Shiny, będzie wewnątrz funkcji serwera. 
 
 ### Przegląd kontrolek
@@ -88,7 +88,7 @@ Shiny jest używany do:
 * Tworzenia pulpitów nawigacyjnych, które śledzą ważne wskaźniki wydajności na wysokim poziomie, jednocześnie ułatwiając dokładne zbadanie metryk, które wymagają dalszego dochodzenia.
 * Zastępowania setek stron PDF interaktywnymi aplikacjami, które pozwalają użytkownikowi przejść do dokładnie tego fragmentu wyników, który go interesuje. 
 * Przedstawiania skomplikowanych modeli niefachowym odbiorcom za pomocą informacyjnych wizualizacji i interaktywnej analizy. 
-* Możesz udostępnić zaawansowane analizy R użytkownikom nieposiadającym umiejętności programowania. 
+* Udostępniania zaawansowanych analiz R użytkownikom nieposiadającym umiejętności programowania. 
 * Tworzenia interaktywnych aplikacji do nauczania statystyki i pojęć związanych z nauką o danych, które pozwalają uczącym się modyfikować dane wejściowe i obserwować efekty tych zmian w analizie. 
 
 Jak widać Shiny jest niezwykle elastyczny – można go używać do tworzenia prostych aplikacji służących do wizualizacji danych, jak również skomplikowanych narzędzi analitycznych wykorzystywanych w przedsiębiorstwach do podejmowania decyzji biznesowych. Pakiet ten doskonale integruje się z innymi pakietami w R, co pozwala na wykorzystanie szerokiej gamy metod statystycznych i graficznych dostępnych w tym języku. Warto również wspomnieć, że Shiny wspiera prace grupowe i jest przystosowany do pracy w środowisku sieciowym. Aplikacje Shiny mogą być hostowane na lokalnych serwerach, w chmurze (na przykład na platformie ShinyApps.io) lub bezpośrednio z RStudio Server, co ułatwia współdzielenie aplikacji z innymi użytkownikami. 
