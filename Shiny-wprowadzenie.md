@@ -94,5 +94,5 @@ Shiny jest używany do:
 Jak widać Shiny jest niezwykle elastyczny – można go używać do tworzenia prostych aplikacji służących do wizualizacji danych, jak również skomplikowanych narzędzi analitycznych wykorzystywanych w przedsiębiorstwach do podejmowania decyzji biznesowych. Pakiet ten doskonale integruje się z innymi pakietami w R, co pozwala na wykorzystanie szerokiej gamy metod statystycznych i graficznych dostępnych w tym języku. Warto również wspomnieć, że Shiny wspiera prace grupowe i jest przystosowany do pracy w środowisku sieciowym. Aplikacje Shiny mogą być hostowane na lokalnych serwerach, w chmurze (na przykład na platformie ShinyApps.io) lub bezpośrednio z RStudio Server, co ułatwia współdzielenie aplikacji z innymi użytkownikami. 
 
 ## Przykłady
----
+[Link1](https://gallery.shinyapps.io/083-front-page/)
 
