@@ -18,7 +18,7 @@ Aplikacja w Shiny zakłada się z trzech podstawowych elementów po zainstalowan
 ui <- fluidPage(
 
   # Tytuł aplikacji ----
-  titlePanel("Hello Shiny!"),
+  titlePanel("Histogram Shiny!"),
 
   # Układ boczny z definicjami wejść i wyjść ----
   sidebarLayout(
