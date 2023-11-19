@@ -4,9 +4,12 @@
   1. Cel prezentacji
   2. Czym jest Shiny?
   3. Jak działa Shiny?
-  4. Zastosowania Shiny
-  5. Przykłady
-  6. Bibliografia
+    a. Budowa
+    b. Programowanie reaktywne
+    c. Przegląd kontrolek
+  5. Zastosowania Shiny
+  6. Przykłady
+  7. Bibliografia
 
 ## Cel prezentacji
 
