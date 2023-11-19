@@ -13,7 +13,7 @@
 
 ## Cel prezentacji
 
-Celem prezentacji jest...
+Celem prezentacji jest zaznajomienie z pakietem Shiny używanym w języku programowania R, jego strukturą, mechanizmem działania oraz szerokim spektrum możliwości, które oferuje. Prezentacja ta ma na celu wyjaśnienie, jak Shiny pozwala na tworzenie interaktywnych aplikacji bez konieczności posiadania zaawansowanej wiedzy z zakresu technologii internetowych. Jest ona okazją do zapoznania się z kluczowymi funkcjami i technikami programowania w Shiny, które umożliwiają tworzenie zaawansowanych narzędzi analitycznych bądź/i wizualizacyjnych. Prezentacja będzie również zawierać praktyczne przykłady aplikacji, demonstrujące, jak Shiny może być wykorzystane do poprawy pracy analitycznej i prezentacji wyników.
 
 ## Czym jest Shiny?
 
@@ -84,9 +84,15 @@ shinyApp(ui = ui, server = server)
 
 Jak widać Shiny jest wyposażony w bibliotekę programowania reaktywnego, którą używa się do strukturyzowania logiki aplikacji. Korzystając z tej biblioteki, zmiana wartości wejściowych naturalnie powoduje ponowne wykonanie odpowiednich części kodu R, co z kolei powoduje aktualizację zmienionych wyników. Model programowania reaktywnego eliminuje potrzebę dodatkowego kodu obsługi zdarzeń. 
 
-W Shiny istnieją trzy rodzaje obiektów w programowaniu reaktywnym: źródła reaktywne, punkty końcowe reaktywne i przewodniki reaktywne. 
+W programowaniu reaktywnym, stosowanym w pakiecie Shiny dla R, istnieją trzy główne typy obiektów, które zarządzają przepływem danych i reakcjami na zmiany w tych danych:
 
-Źródła i punkty końcowe reaktywne: Najprostsza struktura programu reaktywnego obejmuje tylko źródło i punkt końcowy. W aplikacji Shiny źródłem zwykle są dane wejściowe użytkownika przez interfejs przeglądarki. Na przykład, gdy użytkownik wybiera element, wpisuje dane lub klika przycisk, te działania ustawiają wartości, które są źródłami reaktywnymi. Reaktywny punkt końcowy to zazwyczaj coś, co pojawia się w oknie przeglądarki użytkownika, takie jak wykres lub tabela wartości. 
+**Źródła reaktywne** (ang. reactive sources) - są to elementy, które inicjują reaktywny przepływ danych. W kontekście aplikacji Shiny, najczęściej są to dane wejściowe podane przez użytkownika poprzez interakcję z interfejsem użytkownika w przeglądarce internetowej. Na przykład, wybór opcji z listy rozwijanej, wpisanie tekstu do pola formularza, lub kliknięcie przycisku to działania, które generują dane wejściowe służące jako źródła reaktywne.
+
+**Punkty końcowe reaktywne** (ang. reactive endpoints) - to miejsca, w których dane wejściowe są ostatecznie przetwarzane i prezentowane użytkownikowi, często w formie wizualizacji, takich jak wykresy lub tabele. Są to elementy UI, które są aktualizowane w odpowiedzi na zmiany w źródłach reaktywnych, odzwierciedlając w czasie rzeczywistym interakcję użytkownika z aplikacją.
+
+**Przewodniki reaktywne** (ang. reactive conductors) - pełnią funkcję pośredników w przepływie danych pomiędzy źródłami a punktami końcowymi. Pozwalają na tworzenie bardziej złożonych operacji reaktywnych, takich jak przetwarzanie danych lub operacje logiczne, które są wykonywane w odpowiedzi na zmiany w danych wejściowych, zanim wynik zostanie zaprezentowany w punkcie końcowym.
+
+Reasumując, w aplikacjach Shiny, dane wejściowe użytkownika są źródłem reaktywnym, które uruchamiają ciąg wydarzeń w aplikacji. Te dane są przetwarzane przez logikę aplikacji, mogą być modyfikowane przez przewodniki reaktywne, a efekty tych działań są prezentowane użytkownikowi przez punkty końcowe reaktywne. Wszystko to tworzy dynamiczną i interaktywną aplikację, która reaguje na działania użytkownika w czasie rzeczywistym.
 
 ```UI``` jest proste, ponieważ każdy użytkownik otrzymuje ten sam HTML. ```serwer``` jest bardziej skomplikowany, ponieważ każdy użytkownik musi otrzymać niezależną wersję aplikacji; gdy użytkownik A przesuwa suwak, użytkownik B nie powinien zobaczyć zmiany swoich wyników. 
 Aby osiągnąć tę niezależność, Shiny wywołuje funkcję server() za każdym razem, gdy zaczyna się nowa sesja. Podobnie jak w przypadku każdej innej funkcji R, gdy funkcja serwera jest wywoływana, tworzy nowe lokalne środowisko niezależne od każdego innego wywołania funkcji. Pozwala to każdej sesji mieć unikalny stan, a także izoluje zmienne utworzone wewnątrz funkcji. Dlatego prawie całe programowanie reaktywne, które wykonasz w Shiny, będzie wewnątrz funkcji serwera. 
@@ -104,7 +110,7 @@ Shiny jest używany do:
 * Zastępowania setek stron PDF interaktywnymi aplikacjami, które pozwalają użytkownikowi przejść do dokładnie tego fragmentu wyników, który go interesuje. 
 * Przedstawiania skomplikowanych modeli niefachowym odbiorcom za pomocą informacyjnych wizualizacji i interaktywnej analizy. 
 * Udostępniania zaawansowanych analiz R użytkownikom nieposiadającym umiejętności programowania. 
-* Tworzenia interaktywnych aplikacji do nauczania statystyki i pojęć związanych z nauką o danych, które pozwalają uczącym się modyfikować dane wejściowe i obserwować efekty tych zmian w analizie. 
+* Tworzenia interaktywnych aplikacji do celów edukacyjnych, które pozwalają uczącym się modyfikować dane wejściowe i obserwować efekty tych zmian w analizie. 
 
 Jak widać Shiny jest niezwykle elastyczny – można go używać do tworzenia prostych aplikacji służących do wizualizacji danych, jak również skomplikowanych narzędzi analitycznych wykorzystywanych w przedsiębiorstwach do podejmowania decyzji biznesowych. Pakiet ten doskonale integruje się z innymi pakietami w R, co pozwala na wykorzystanie szerokiej gamy metod statystycznych i graficznych dostępnych w tym języku. Warto również wspomnieć, że Shiny wspiera prace grupowe i jest przystosowany do pracy w środowisku sieciowym. Aplikacje Shiny mogą być hostowane na lokalnych serwerach, w chmurze (na przykład na platformie ShinyApps.io) lub bezpośrednio z RStudio Server, co ułatwia współdzielenie aplikacji z innymi użytkownikami. 
 
