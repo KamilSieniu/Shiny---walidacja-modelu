@@ -3,10 +3,10 @@
 ## Agenda 
   1. Cel prezentacji
   2. Czym jest Shiny?
-  3. Jak działa Shiny? \\
-    a. Budowa \\
-    b. Programowanie reaktywne \\
-    c. Przegląd kontrolek 
+  3. Jak działa Shiny?
+     - Budowa
+     - Programowanie reaktywne
+     - Przegląd kontrolek 
   5. Zastosowania Shiny
   6. Przykłady
   7. Bibliografia
