@@ -98,6 +98,8 @@ Reasumując, w aplikacjach Shiny, dane wejściowe użytkownika są źródłem re
 ```UI``` jest proste, ponieważ każdy użytkownik otrzymuje ten sam HTML. ```serwer``` jest bardziej skomplikowany, ponieważ każdy użytkownik musi otrzymać niezależną wersję aplikacji; gdy użytkownik A przesuwa suwak, użytkownik B nie powinien zobaczyć zmiany swoich wyników. 
 Aby osiągnąć tę niezależność, Shiny wywołuje funkcję server() za każdym razem, gdy zaczyna się nowa sesja. Podobnie jak w przypadku każdej innej funkcji R, gdy funkcja serwera jest wywoływana, tworzy nowe lokalne środowisko niezależne od każdego innego wywołania funkcji. Pozwala to każdej sesji mieć unikalny stan, a także izoluje zmienne utworzone wewnątrz funkcji. Dlatego prawie całe programowanie reaktywne, które wykonasz w Shiny, będzie wewnątrz funkcji serwera. 
 
+![Obraz2](https://github.com/KamilSieniu/Shiny---walidacja-modelu/blob/main/MicrosoftTeams-image%20(1).png)
+
 ### Przegląd kontrolek
 
 ![Obraz1](https://github.com/KamilSieniu/Shiny---walidacja-modelu/blob/f42e7d1196f863006e90e02145a057e25066b787/MicrosoftTeams-image.png)
@@ -126,3 +128,5 @@ Jak widać Shiny jest niezwykle elastyczny – można go używać do tworzenia p
 * https://www.cs.put.poznan.pl/alabijak/emd/08_Aplikacje_dla_uzytkownikow.html#/26
 * https://shiny.posit.co/r/getstarted/build-an-app/customizing-ui/interface.html
 * https://mastering-shiny.org/
+
+
