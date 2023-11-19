@@ -128,5 +128,9 @@ Jak widać Shiny jest niezwykle elastyczny – można go używać do tworzenia p
 * https://www.cs.put.poznan.pl/alabijak/emd/08_Aplikacje_dla_uzytkownikow.html#/26
 * https://shiny.posit.co/r/getstarted/build-an-app/customizing-ui/interface.html
 * https://mastering-shiny.org/
+ 
+ <br>
+ <br>
 
+![ObrazLicencje](https://github.com/KamilSieniu/Shiny---walidacja-modelu/blob/main/licencje.png)
 
