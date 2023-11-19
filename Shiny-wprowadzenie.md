@@ -1,6 +1,10 @@
 # Shiny – framework aplikacji internetowych dla języka R
 
 ## Agenda 
+  # Cel prezentacji
+  # Czym jest Shiny?
+  # Jak działa Shiny?
+  # Zastosowania Shiny
 
 ## Cel prezentacji
 
