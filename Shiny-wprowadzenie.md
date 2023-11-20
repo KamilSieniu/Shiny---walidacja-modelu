@@ -140,3 +140,5 @@ Jak widać Shiny jest niezwykle elastyczny – można go używać do tworzenia p
 <p align="center">
   <img src="https://github.com/KamilSieniu/Shiny---walidacja-modelu/blob/main/licencje.png" alt="Opis alternatywny" />
 </p>
+
+Autorzy: Joanna Starosta, Kamil Sieniawski, Michał Bujnowski
