@@ -1,23 +1,23 @@
-1. Charakterystyka oprogramowania
-  a. Nazwa skrócona - Walidator modelu
-  b. Nazwa pełna - Aplikacja służąca do uproszczonej walidacji odpowiedniego modelu liniowego dla dowolonych danych
+1. Charakterystyka oprogramowania </br>
+  a. Nazwa skrócona - Walidator modelu </br>
+  b. Nazwa pełna - Aplikacja służąca do uproszczonej walidacji odpowiedniego modelu liniowego dla dowolonych danych </br>
   c. Opis
 
-2. Prawa autorskie
-  a. Autorzy
+2. Prawa autorskie </br>
+  a. Autorzy </br>
   b. Licencje
 
 3. Specyfikacja wymagań
-  a. 
-    P1, nazwa: plik wsadowy, opis: plik musi być w formacie csv, 1-wymagane, funkcjonalne
-    D1, nazwa: dane wsadowe, opis: dane nie mogą zawierać braków, 1
-    D2, nazwa: , opis: dane powinny mieć odpowiednie klasy,2 - zalecane
+  a. </br>
+    P1, nazwa: plik wsadowy, opis: plik musi być w formacie csv, 1-wymagane, funkcjonalne </br>
+    D1, nazwa: dane wsadowe, opis: dane nie mogą zawierać braków, 1 </br>
+    D2, nazwa: , opis: dane powinny mieć odpowiednie klasy,2 - zalecane 
 
-4. Architektura systemu/oprogramowania
-  a. Architektura rozwoju - stos technologiczny
-    R (wersja 4.2.1), 
-    R Studio (dodać wersje)
-  b. Architektura uruchomieniowa - stos technologiczny
+4. Architektura systemu/oprogramowania </br>
+  a. Architektura rozwoju - stos technologiczny </br>
+      R (wersja 4.2.1), </br>
+      R Studio (dodać wersje) </br>
+  b. Architektura uruchomieniowa - stos technologiczny </br>
     Biblioteki zaimplementowane w R
     * readr (wersja 2.1.4) - posłuży do wgrywania dokumentów w formacie csv
     * shiny (wersja 1.7.5) - posłuży do stworzenia aplikacji WEB
