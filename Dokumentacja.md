@@ -1,4 +1,4 @@
-1. Charakterystyka oprogramowania </br>
+1. Charakterystyka oprogramowania </br2>
   a. Nazwa skrócona - Walidator modelu </br>
   b. Nazwa pełna - Aplikacja służąca do uproszczonej walidacji odpowiedniego modelu liniowego dla dowolonych danych </br>
   c. Opis
