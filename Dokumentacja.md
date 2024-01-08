@@ -9,7 +9,7 @@
 
 # 3. Specyfikacja wymagań
   a. </br>
-  | Col1 | Col2 | Col3 | Col4 | Col5 |
+  | identyfikator | nazwa | opis | priorytet| kategoria |
 |------|------|------|------|------|
 |  P1     | nazwa: plik wsadowy     |    opis: plik musi być w formacie csv  |  1-wymagane    |   funkcjonalne </br>   |
 | D1     |  nazwa: dane wsadowe    |   opis: dane nie mogą zawierać braków    |     1  |      |
