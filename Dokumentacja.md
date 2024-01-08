@@ -14,7 +14,11 @@
 |------|------|------|------|------|
 |  P1     | plik wsadowy     |    plik musi być w formacie csv  |  1-wymagane    |   funkcjonalne </br>   |
 | D1     |  dane wsadowe    |   dane nie mogą zawierać braków    |     1  |      |
-|  D2    |  nazwa:    |dane powinny mieć odpowiednie klasy      | 2 - zalecane 
+|  D2    |  nazwa:    |dane powinny mieć odpowiednie klasy      | 2 - zalecane |
+| A1 | Załadowanie pliku z danymi | | |
+| A1a | Odpowiedni format pliku | Plik powinien być w formacie CSV | Wymagane | Funkcjonalne |
+| A1b | Odpowiednia struktura danych | Dane nie mogą zawierać braków danych, a dane powinny być w formacie liczbowym | Wymagane | Funkconalne |
+
      
 
 
@@ -25,7 +29,7 @@
       R (wersja 4.2.1), </br>
       R Studio (dodać wersje) </br>
   b. Architektura uruchomieniowa - stos technologiczny </br>
-    Biblioteki zaimplementowane w R
+    Biblioteki zaimplementowane w R </br>
     **readr** (wersja 2.1.4) - posłuży do wgrywania dokumentów w formacie csv </br>
     **shiny** (wersja 1.7.5) - posłuży do stworzenia aplikacji WEB </br>
     **ggplot2** (wersja 3.4.3) - posłuży do tworzenia wyższej jakości wizualizacji </br>
