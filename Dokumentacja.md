@@ -5,7 +5,8 @@
 
 # 2. Prawa autorskie </br>
   **Autorzy:** Kamil Sieniawski, Joanna Starosta, Michał Bujnowski </br>
-  **Licencja:** *Creative Common Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)*
+  **Licencja:** *Creative Common Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)* </br>
+  Darmowe użytkowanie, kopiowanie, rozpowszechnianie i modyfikowanie oprogramowania są dozwolone pod warunkiem przypisania odpowiedniego uznania autorstwa, braku użycia korporacyjnego oraz udostępniania utworów pochodnych na tych samych warunkach.
 
 # 3. Specyfikacja wymagań
  
