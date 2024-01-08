@@ -8,7 +8,7 @@
   b. Licencje
 
 # 3. Specyfikacja wymagań
-  a. </br>
+ 
   | identyfikator | nazwa | opis | priorytet| kategoria |
 |------|------|------|------|------|
 |  P1     | nazwa: plik wsadowy     |    opis: plik musi być w formacie csv  |  1-wymagane    |   funkcjonalne </br>   |
