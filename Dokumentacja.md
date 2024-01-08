@@ -3,17 +3,17 @@
   b. Nazwa pełna - Aplikacja służąca do uproszczonej walidacji odpowiedniego modelu liniowego dla dowolonych danych </br>
   c. Opis
 
-2. Prawa autorskie </br>
+# 2. Prawa autorskie </br>
   a. Autorzy </br>
   b. Licencje
 
-3. Specyfikacja wymagań
+# 3. Specyfikacja wymagań
   a. </br>
     P1, nazwa: plik wsadowy, opis: plik musi być w formacie csv, 1-wymagane, funkcjonalne </br>
     D1, nazwa: dane wsadowe, opis: dane nie mogą zawierać braków, 1 </br>
     D2, nazwa: , opis: dane powinny mieć odpowiednie klasy,2 - zalecane 
 
-4. Architektura systemu/oprogramowania </br>
+# 4. Architektura systemu/oprogramowania </br>
   a. Architektura rozwoju - stos technologiczny </br>
       R (wersja 4.2.1), </br>
       R Studio (dodać wersje) </br>
@@ -27,7 +27,7 @@
     * nortest (wersja 1.0-4) - umożliwia przeprowadzenie testów na normalność rozkładów dwóch zmiennych
     * lmtest (wersja 0.9-40) - umożliwia testowanie modeli regresji liniowej
 
-5. Testy
+# 5. Testy
   a. Scenariusze testów
     * wgranie dowolnego pliku cvs
     
