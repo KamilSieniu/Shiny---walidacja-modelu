@@ -41,5 +41,10 @@
 # 5. Testy
   a. Scenariusze testów
     * wgranie dowolnego pliku CSV
+
+| id testu | nazwa | opis | 
+|------|------|------|
+|  T1     | Wgranie dowolnego pliku  CSV     |  -  |
+
     
   b. Sprawozdanie z wykonania scenariuszy testów
