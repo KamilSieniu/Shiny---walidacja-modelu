@@ -57,8 +57,8 @@
 
       
   **Architektura uruchomieniowa - stos technologiczny** </br>
-     - R Script lub R Markdown 
-     - biblioteki R (wyżej wymienione)
+     - R Script lub R Markdown </br>
+     - biblioteki R (wyżej wymienione) </br>
 
 # 5. Testy
   **Scenariusze testów**
