@@ -12,9 +12,6 @@
  
   | Identyfikator | Nazwa | Opis | Priorytet| Kategoria |
 |------|------|------|------|------|
-| P1 | plik wsadowy     |    plik musi być w formacie csv  |  1-wymagane    |   funkcjonalne   |
-| D1     |  dane wsadowe    |   dane nie mogą zawierać braków    |     1  |      |
-|  D2    |  nazwa:    |dane powinny mieć odpowiednie klasy      | 2 - zalecane |
 | **A** | **Załadowanie pliku z danymi** | | |
 | A1 | Odpowiedni format pliku | Plik powinien być w formacie CSV | Wymagane | Funkcjonalne |
 | A2 | Odpowiednia struktura danych | Separatorem kolumn musi być przecinek, a części dziesiętne powinny być rozdzielone kropką | Wymagane | Funkconalne |
@@ -27,29 +24,27 @@
 | **C** | **Predykcje** | | |
 | C1 | Przeprowadzenie predykcji | Należy w odpowiedni, podany w aplikacji sposób wpisywać warunki do predykcji. Następnie należy wcisnąć przycisk "Dokonaj predykcji". | Wymagane | Funkcjonalne |
 | C2 | Ograniczenie predykcji | Aplikacja nie dokona predykcji dla zmiennej kategoryzowanej | Wymagane | Funkcjonalne |
-
-
-     
-
-
-   
+| **D** | **Program aplikacji** | | |
+| D1 | Instalacja bibliotek | Program aplikacji załadowanie bibliotek, jednak wymagane jest, aby Użytkownik miał je już zainstalowane w wersjach ze specyfikacji | Wymagane | Funkcjonalne |
+| D2 | Posiadanie odpowiednich wersji programów | Użytkownik powinien mieć zainstalowaną wersję języka R oraz RStudio podane w specyfikacji | Zalecane | Funkcjonalne |
+| D3 | Uruchomienie programu | Kod do uruchumienia aplikacji należy wywołać w R Script lub R Markdown (w jednym Chank-u) | Wymagane | Funkcjonalne |
+| **E** | **Działania z poziomu interfejsu użytkownika** | | |
+| E1 | Wgranie wybranego pliku | Program powinien wgrać dane | Wymagane | Funkcjonalne |
+| E2 | Możliwość wybrania odpowiednich parametrów | Program powinien dać możliwość zmiany kryteriów za pomocą suwaków, list i checkboxów | Wymagane | Funkcjonalne |
+| E3 | Aktualizacje modelu | Program powinien po kliknięciu "Uruchom model" aktualizować model | Wymagane | Funkcjonalne | 
+| E4 | Aktualizacje treści | Program powinien aktualizować wartości wynikowe umieszczone w tekście nad wykresami oraz same wizualizacje po kliknięciu "Uruchom model" | Wymagane | Funkcjonalne | 
+| E5 | Poruszanie po zakładkach aplikacji | Program powinien umożliwiać zmianę zakładek "Podsumowanie modelu" oraz "Diagnostyka" | Wymagane | Funkcjonalne |
+| E6 | Wyliczanie predykcji | Program po kliknięciu "Dokonaj predykcji dla wartości numerycznych powinien wyliczyć wartość zmiennej zależnej według modelu | Wymagane | Funkcjonalne |
+| E6 | Przejrzystość | Interfejs użytkownika powinien być przejrzysty i łatwy do odczytania - powienien zapewniać swobodę oraz możliwość zrozumienia działania oprogramowania | Wymagane | Pozafunkcjonalne |
+| E7 | Dostępność | Program powinien umożliwić użytkownikowi sprawne korzystanie z aplikacji - odpowiednio dobrany model według wybranych parametrów powinien być wyliczony w ciągu kilku sekund | Wymagane | Poza funkcjonalne |
 
 # 4. Architektura systemu/oprogramowania </br>
   **Architektura rozwoju - stos technologiczny** </br>
       R (wersja 4.2.1), </br>
-      R Studio (dodać wersje) </br>
-  **Architektura uruchomieniowa - stos technologiczny** </br>
-    Biblioteki zaimplementowane w R </br>
-    *readr* (wersja 2.1.4) - posłuży do wgrywania dokumentów w formacie csv </br>
-    *shiny* (wersja 1.7.5) - posłuży do stworzenia aplikacji WEB </br>
-    *ggplot2* (wersja 3.4.3) - posłuży do tworzenia wyższej jakości wizualizacji </br>
-    *combinat* (wersja 0.0-8) - umożliwia zastosowanie funkcji związanych z kombinatoryką </br>
-    *gritExtra* (wersja 2.3) - umożliwia elastyczne łączenie wielu wykresów lub tabel w jednym oknie graficznym </br>
-    *nortest* (wersja 1.0-4) - umożliwia przeprowadzenie testów na normalność rozkładów dwóch zmiennych </br>
-    *lmtest* (wersja 0.9-40) - umożliwia testowanie modeli regresji liniowej </br>
+      R Studio (wersja 2023.03.0) </br>
+      GitHub - umożliwia przechowywanie, śledzenia zmian oraz współpracę nad projektem
 
-
-!!! ALTERNATYWNIE !!!
+ Biblioteki zaimplementowane w R </br>
 | Nazwa biblioteki | Wersja biblioteki | Opis | 
 |------|------|------|
 | *readr* | 2.1.4 | posłuży do wgrywania dokumentów w formacie csv |
@@ -60,16 +55,34 @@
 | *nortest* | 1.0-4 | umożliwia przeprowadzenie testów na normalność rozkładów dwóch zmiennych |
 | *lmtest* | 0.9-40 | umożliwia testowanie modeli regresji liniowej |
 
+      
+  **Architektura uruchomieniowa - stos technologiczny** </br>
+     - R Script lub R Markdown 
+     - biblioteki R (wyżej wymienione)
+
 # 5. Testy
   **Scenariusze testów**
-    * wgranie dowolnego pliku CSV
-
-| Id testu | Nazwa | Opis | 
-|------|------|------|
-| T1 | Wgranie dowolnego pliku  CSV | - |
-
-    
+| Id testu | Opis | 
+|------|------|
+| T0 | Uruchomienie aplikacji poprzez wywołanie kodu |
+| T1a | Wgranie dowolnego pliku CSV z wartościami liczbowymi |  
+| T1b | Wgranie dowolnego pliku CSV z wartościami liczbowymi i kategorycznymi |
+| T2 | Możliwość wyboru dowolnej zmiennej liczbowej jako zmienna zależna |
+| T3 | Aplikacja reaguje na zmiany filtrów po kliknięciu "Uruchom model" |
+| T4 | Po każdej aktualizacji modelu aplikacja zmienia wartości w tekście w zakładce "Podsumowanie modelu", zawsze gdy jest to stosowne (istnieje możliwość, że dla nowych filtrów najlepszy model pozostaje ten sam) |
+| T5 | Dla modelu ze zmiennymi niezależnymi numerycznymi aplikacja dokonuje predykcji po odpowiednim wprowadzeniu wartości wg zaproponowanego formatu |
+| T6 | Dla zbyt restrykcyjnych filtrów aplikacja wyświetla komunikat, że stworzenie modelu jest niemożliwe i sugeruje wybór innych, przy czym nie trzeba uruchamiać aplikacji na nowo |
+ 
   **Sprawozdanie z wykonania scenariuszy testów**
-  | Id testu | Nazwa | Wynik | 
-|------|------|------|
-| T1 | Wgranie dowolnego pliku  CSV | - |
+  | Id testu | Wynik | 
+|------|------|
+| T0 | SUKCES |
+| T1a | SUKCES | 
+| T1b | SUKCES |
+| T2 | SUKCES |
+| T3 | SUKCES |
+| T4 | SUKCES |
+| T5 | SUKCES |
+| T6 | SUKCES |
+
+
