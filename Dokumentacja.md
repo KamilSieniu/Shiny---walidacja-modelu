@@ -15,10 +15,11 @@
 | P1 | plik wsadowy     |    plik musi być w formacie csv  |  1-wymagane    |   funkcjonalne   |
 | D1     |  dane wsadowe    |   dane nie mogą zawierać braków    |     1  |      |
 |  D2    |  nazwa:    |dane powinny mieć odpowiednie klasy      | 2 - zalecane |
-| A | Załadowanie pliku z danymi | | |
+| **A** | **Załadowanie pliku z danymi** | | |
 | A1 | Odpowiedni format pliku | Plik powinien być w formacie CSV | Wymagane | Funkcjonalne |
-| A2 | Odpowiednia struktura danych | Dane nie mogą zawierać braków danych, a dane powinny być w formacie liczbowym | Wymagane | Funkconalne |
-| A3 | Odpowiednia struktura nagłówków w danych | Nazwy nagłówków nie powinny zawierać spacji oraz muszą być w cudzysłowach | Wymagana | Funkcjonalne |
+| A2 | Odpowiednia struktura danych | Separatorem kolumn musi być przecinek, a części dziesiętne powinny być rozdzielone kropką | Wymagane | Funkconalne |
+| A3 | Postępowanie z brakami danych | Dane nie powinny zawierać braków. Jeśli jednak wystąpią, algorytm zinterpretuje je jako oddzielną kategorię zmiennej | Przydatne | Funkcjonalne |
+| A4 | Odpowiednia struktura nagłówków kolumn | Nazwy nagłówków nie powinny zawierać spacji | Wymagana | Funkcjonalne |
 
 
      
