@@ -1,7 +1,7 @@
 # 1. Charakterystyka oprogramowania </br>
   **Nazwa skrócona:** Diagnostyk Modelu </br>
   **Nazwa pełna:** Aplikacja służąca do uproszczonej walidacji odpowiedniego modelu liniowego dla dowolonych danych </br>
-  **Opis:** -
+  **Opis:** Narzędzie generuje modele ze wszystkich możliwych kombinacji liniowych z dowolnych danych wsadowych (odpowiednio przygotowanych). Użytkownik ma możliwość wybrać, jaka zmienna będzie przewidywana. Narzędzie to pozwala w czasie rzeczywistym wybierać najlepszy model dla podanych przez Użytkownika parametrów oraz przedstawia diagnostykę modelu. Dodatkową funkcją jest możliwość wykonania predykcji dla zmiennej zależnej i otrzymanie wyniku w czasie rzeczywistym. Całość jest w postaci aplikacji z bogatym interfejsem. 
 
 # 2. Prawa autorskie </br>
   **Autorzy:** Kamil Sieniawski, Joanna Starosta, Michał Bujnowski </br>
