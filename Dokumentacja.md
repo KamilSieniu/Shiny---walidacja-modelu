@@ -1,5 +1,5 @@
 # 1. Charakterystyka oprogramowania </br>
-  **Nazwa skrócona:** Walidator modelu </br>
+  **Nazwa skrócona:** Diagnostyk Modelu </br>
   **Nazwa pełna:** Aplikacja służąca do uproszczonej walidacji odpowiedniego modelu liniowego dla dowolonych danych </br>
   **Opis:** -
 
