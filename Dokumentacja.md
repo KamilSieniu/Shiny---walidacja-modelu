@@ -19,7 +19,14 @@
 | A1 | Odpowiedni format pliku | Plik powinien być w formacie CSV | Wymagane | Funkcjonalne |
 | A2 | Odpowiednia struktura danych | Separatorem kolumn musi być przecinek, a części dziesiętne powinny być rozdzielone kropką | Wymagane | Funkconalne |
 | A3 | Postępowanie z brakami danych | Dane nie powinny zawierać braków. Jeśli jednak wystąpią, algorytm zinterpretuje je jako oddzielną kategorię zmiennej | Przydatne | Funkcjonalne |
-| A4 | Odpowiednia struktura nagłówków kolumn | Nazwy nagłówków nie powinny zawierać spacji | Wymagana | Funkcjonalne |
+| A4 | Odpowiednia struktura nagłówków kolumn | Nazwy nagłówków nie powinny zawierać spacji | Wymagane | Funkcjonalne |
+| **B** | **Wybór parametrów do analizy** | | |
+| B1 | Wybór zmiennej zależnej | Zmienna zależna musi być numeryczna. W innym przypadku nastąpi zamknięcie aplikacji | Wymagane | Funkcjonalne |
+| B2 | Zmiana parametrów | Po zmienie filtrów i parametrów należy ponownie wcisnąć przycisk "Uruchom model" | Wymagane | Funkcjonalne |
+| B3 | Wybór testów | Po zaznaczeniu dowolnego checkboxa z testami, aplikacja jedynie wyznacza p-wartości dla testów - nie wpływa to na wybór najlepszego modelu | Opcjonalne | Funkcjonalne |
+| **C** | **Predykcje** | | |
+| C1 | Przeprowadzenie predykcji | Należy w odpowiedni, podany w aplikacji sposób wpisywać warunki do predykcji. Następnie należy wcisnąć przycisk "Dokonaj predykcji". | Wymagane | Funkcjonalne |
+| C2 | Ograniczenie predykcji | Aplikacja nie dokona predykcji dla zmiennej kategoryzowanej | Wymagane | Funkcjonalne |
 
 
      
